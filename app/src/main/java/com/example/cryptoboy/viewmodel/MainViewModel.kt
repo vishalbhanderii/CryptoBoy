@@ -22,6 +22,8 @@ class MainViewModel @Inject constructor(
 ) : ViewModel() {
 
     private val _prices = MutableLiveData<Map<String, String?>>()
+
+
     val prices: LiveData<Map<String, String?>> = _prices
 
     private val combinedPrices = mutableMapOf<String, String?>().also { prices ->
